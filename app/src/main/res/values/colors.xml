@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name= "AnaRenk">#0C134F</color>
+    <color name= "arkaplan">#D4ADFC</color>
+
+</resources>
