@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var downloadButton : Button
 
+    private lateinit var iletisim : Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,6 +51,13 @@ class MainActivity : AppCompatActivity() {
         QrText= findViewById(R.id.QrText)
         QrButton= findViewById(R.id.QrOlustur)
         downloadButton = findViewById(R.id.Qrindir)
+        iletisim = findViewById(R.id.iletisim)
+
+
+        iletisim.setOnClickListener {
+            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/emre-aktas-9176a31a6/?originalSubdomain=tr"))
+            startActivity(browserIntent)
+        }
 
 
 
@@ -79,6 +87,7 @@ class MainActivity : AppCompatActivity() {
                 downloadButton.isVisible = false
             }
         }
+
 
 
        }
